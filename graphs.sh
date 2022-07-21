@@ -13,24 +13,23 @@ b=#da3
 s=#b56
 a=#000
 
-    rrdtool graphv "graphs/favicon.png" \
-      --alt-autoscale \
-      --end now \
-      --upper-limit 100 \
-      --lower-limit 0 \
-      --rigid \
-      --full-size-mode \
-      --only-graph \
-      --height 16 \
-      --start now-1day\
-      --width 16 \
-      "DEF:b=bedroom.rrd:score:AVERAGE" \
-      "DEF:k=kitchen.rrd:score:AVERAGE" \
-      "DEF:s=study.rrd:score:AVERAGE" \
-      "AREA:b#0f0" \
-      "AREA:k#0f0" \
-      "AREA:s#0f0"
-    exit 0
+rrdtool graphv "graphs/favicon.png" \
+  --alt-autoscale \
+  --end now \
+  --upper-limit 100 \
+  --lower-limit 0 \
+  --rigid \
+  --full-size-mode \
+  --only-graph \
+  --height 16 \
+  --start now-1day\
+  --width 16 \
+  "DEF:b=bedroom.rrd:score:AVERAGE" \
+  "DEF:k=kitchen.rrd:score:AVERAGE" \
+  "DEF:s=study.rrd:score:AVERAGE" \
+  "AREA:b#0f0" \
+  "AREA:k#0f0" \
+  "AREA:s#0f0"
 
 for period in "${PERIODS[@]}"
 do
