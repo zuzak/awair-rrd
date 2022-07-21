@@ -1,0 +1,54 @@
+figure {
+  text-align: center;
+}
+
+dt::before {
+  content: '';
+  outline: 1px solid gray;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  display: inline-block;
+  top: 0.2em;
+  right: 0.2em;
+  margin-right: 0.2ch;
+}
+
+.red::before {
+  background-color: #b56;
+}
+.blue::before {
+  background-color: #048;
+}
+.yellow::before {
+  background-color: #da3;
+}
+.black::before {
+  background-color: #000;
+}
+.green::before {
+  background-color: #efe;
+}
+
+dt {
+  display: inline-block;
+}
+dt::after {
+  content: ':'
+}
+dd {
+  display: inline;
+  margin-inline-start: 1ch;
+}
+dd::after {
+  content: '';
+  display: block;
+}
+
+li {
+  display: inline;
+  margin-right: 1ch;
+}
+ul {
+  list-style-type: none;
+}

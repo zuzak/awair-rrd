@@ -1,0 +1,22 @@
+{
+  "name": "awair-rrd",
+  "version": "1.0.0",
+  "description": "Basic tooling to generate a graph of sensor values from several Awair Elements.",
+  "main": "awair.js",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuzak/awair-rrd.git"
+  },
+  "author": "Douglas Gardner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zuzak/awair-rrd/issues"
+  },
+  "homepage": "https://github.com/zuzak/awair-rrd#readme"
+}
